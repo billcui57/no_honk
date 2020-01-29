@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class Loading extends StatefulWidget {
   @override
@@ -21,6 +22,13 @@ class _LoadingState extends State<Loading> {
     
     Navigator.pushReplacementNamed(context, '/home');
   }
+
+
+
+
+ 
+
+
 
 
   @override

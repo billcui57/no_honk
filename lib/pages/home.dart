@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:no_honk/main.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -8,6 +9,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+
+  Color dominant_color = Color.fromRGBO(253, 213, 79, 1);
+
   @override
   Widget build(BuildContext context) {
     Random ran = new Random();
@@ -25,7 +30,7 @@ class _HomeState extends State<Home> {
         title: Text('Main Menu'),
       ),
       body: Container(
-        color: Color.fromRGBO(255, 234, 41,5),
+        color: dominant_color,
         child: Column(
           children: <Widget>[
             Image.asset(

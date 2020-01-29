@@ -4,6 +4,9 @@ import 'package:no_honk/pages/loading.dart';
 import 'package:no_honk/pages/map.dart';
 import 'package:no_honk/pages/measurer.dart';
 
+
+Color dominant_color = Color.fromRGBO(253, 213, 79, 1);
+
 void main() => runApp(MaterialApp(
       initialRoute: '/',
       routes: {
@@ -14,11 +17,11 @@ void main() => runApp(MaterialApp(
       },
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          color: Color.fromRGBO(255, 234, 41, 5),
+          color: dominant_color,
         ),
         textTheme: TextTheme(
             body1: TextStyle(
-                color: Color.fromRGBO(255, 234, 41, 5),
+                color: dominant_color,
                 fontSize: 20,
                 fontFamily: 'Pacifico')),
         buttonColor: Colors.black,
@@ -28,6 +31,7 @@ void main() => runApp(MaterialApp(
               borderRadius: new BorderRadius.circular(18.0),
               ),
         ),
-        backgroundColor: Color.fromRGBO(255, 234, 41, 5),
+        backgroundColor:  dominant_color,
+        
       ),
     ));
